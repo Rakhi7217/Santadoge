@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar-main {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, 0.2);
+}
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.navbar-list > li {
+  list-style: none;
+  margin-top: -0.4rem;
+  cursor: pointer;
+  font-size: larger;
+  font: bold;
+  color: rgb(22, 22, 134);
+}
+.navbar-list > li:hover {
+  color: rgb(96, 96, 201);
+}
+
+.navbar-heading {
+  padding: 0rem;
+  font-size: xx-large;
+  color: rgb(192, 67, 108);
+  font: 900;
+}
+.navbar-button > button,
+.btn-navbar-button > button,
+.navbar-button {
+  border: none;
+  background-color: rgb(187, 142, 156);
+  height: 2rem;
+  width: 10rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ...........btn........... */
+.btn-navbar-main {
+  padding: 1.5rem;
+  position: absolute;
+  width: 94vw;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: aliceblue;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 255, 0.2);
+}
+.btn-navbar-heading {
+  padding: 0rem;
+  font-size: xx-large;
+  color: rgb(192, 67, 108);
+  font: 900;
+}
+.btn-navbar-list > li {
+  list-style: none;
+  cursor: pointer;
+  font-size: larger;
+  font: bold;
+  color: rgb(22, 22, 134);
+}
+.btn-navbar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.btn-navbar {
+  position: relative;
+  display: none;
+  float: right;
+  /* justify-content: flex-end; */
+
+  /* width: 2rem;   */
+}
+.react-btn {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&family=Poppins:wght@200;300;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.App {
+  color: white;
+  font-family: Poppins, sans-serif;
+}
+
+.navbar {
+  top: 0;
+  z-index: 3;
+  /* width: 100vw;  */
+  max-width: 95rem;
+  height: 5rem;
+  display: flex;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(241, 238, 238);
+}
+.logo {
+  object-fit: cover;
+  height: 3rem;
+  width: 4rem;
+}
+.navbarMenuList {
+  margin: 1rem;
+  cursor: pointer;
+}
+.navbarMenuList:hover {
+  color: rgb(76, 0, 255);
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+}
+.active {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid rgb(89, 0, 255);
+}
+.navbarBtn {
+  color: black;
+  border: none;
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  border-radius: 2rem;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+}
+.navbarBtnImg {
+  object-fit: cover;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 1rem;
+}
+
+.mobMenu {
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
+}
+.navMenu {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: rgb(40, 40, 40);
+}
+.listItem {
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background-color: rgb(30, 30, 30);
+}
+
+@media screen and (max-width: 720px) {
+  .mobMenu {
+    display: flex;
+    width: 35px;
+    height: 50px;
+  }
+  .navbarMenuList {
+    display: none;
+  }
+  .navbarBtn {
+    display: none;
+  }
+  .navbar {
+    background-color: transparent;
+  }
+  .navbar .logo {
+    display: none;
+  }
+}
+
+.portfolio {
+  margin: 0 auto;
+  /* max-width: 60rem; */
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+.portfolio-title {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+.portfolio-row {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.portfolio-coloumn {
+  width: 420px;
+  flex-direction: column;
+  flex: auto;
+}
+.portfolio-content {
+  position: relative;
+  border: 0.2rem solid #282828;
+  border-radius: 0.6rem;
+  padding: 0.3rem 1rem;
+}
+
+.portfolio-progress {
+  padding: 0.5rem 0;
+  display: flex;
+}
+.portfolio-progress h3 {
+  width: 30%;
+  font: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1140px) {
+  .portfolio {
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+  .portfolio-progress h3 {
+    width: 50%;
+    font: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.portfolio-progress h3 span {
+  color: yellow;
+}
+.portfolio-progress .bar {
+  width: 100%;
+  height: 1rem;
+  border-radius: 0.6rem;
+  border: 0.1rem solid green;
+  padding: 0.2rem;
+  margin: 0.2rem 0;
+}
+.portfolio-progress .bar span {
+  display: block;
+  height: 100%;
+  border-radius: 0.3rem;
+  background-color: #77686f;
+}
+
+/* .....................Home */
+
+.home-main {
+  display: flex;
+}
+.home-left {
+  width: 45vw;
+  padding: 4rem;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+.home-left h1 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  font-family: cursive;
+  padding: 1rem 0;
+}
+.home-left p {
+  padding-bottom: 2rem;
+}
+.home-end {
+  display: flex;
+  padding: 2.5rem;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+.home-end > h3 {
+  color: blue;
+}
+.home-end-main {
+  padding-top: 5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  margin: 0 10%;
+}
+
+@media screen and (max-width: 720px) {
+  .btn-navbar {
+    display: block;
+  }
+  .navbar-main {
+    display: none;
+  }
+  .home-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-end-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .home-img{
+    width: 100vw;
+  }
+  .home-img img{
+    width: 100%;
+  }
+  .roadmap-main {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .roadmap {
+    width: 96vw;
+    padding: 0;
+  }
+  .roadmap li {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  .roadmap li .icon {
+    color: green;
+    margin-top: 0.25rem;
+    padding-right: 0.8rem;
+  }
+  .roadmap h3 {
+    color: #17a2b8;
+  }
+  .roadmap h1 {
+    font-weight: normal;
+    font-size: 2.5rem;
+    font-family: cursive;
+    color: #00394f;
+  }
+}
+.home-icon {
+  color: red; 
+  padding: .5rem;
+  font-size: 5rem;
+}
+
+/* Roadmap CSS */
+.roadmap-main {
+  padding: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.roadmap {
+  width: 40%;
+  padding: 0 2.5rem;
+}
+.roadmap li {
+  list-style: none;
+  display: flex;
+  margin: 1rem 0;
+}
+.roadmap li .icon {
+  color: green;
+  margin-top: 0.25rem;
+  padding-right: 0.8rem;
+}
+.roadmap h3 {
+  color: #17a2b8;
+}
+.roadmap h1 {
+  font-weight: normal;
+  font-size: 2.5rem;
+  font-family: cursive;
+  color: #00394f;
+}
+
+.roadmap p {
+  margin: 2rem 0;
+}
+
+/* tokenomics CSS */
+.tokenomics {
+  height: 40vh;
+  text-align: center;
+}
+.hr {
+  margin: 0 auto;
+  width: 18rem;
+  color: #17a2b8;
+}
+.tokenomics h1 {
+  padding: 0 0 3rem 0;
+}
+.tokenomics h5 {
+  font-family: cursive;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+.tokenomics-div {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.tokenomics-left {
+  width: 400px;
+  padding: 3rem;
+  background-color: #e8e8e8;
+}
+
+/* Bulish Component CSS */
+.bulish {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.bulish h1 {
+  font-size: 2rem;
+  padding: 2rem;
+  font-family: cursive;
+}
+.bulish p {
+  width: 15rem;
+  color: #17a2b8;
+}
+
+.bulish legend {
+  color: #17a2b8;
+  font-size: 1rem;
+}
+.bulish-icon {
+  color: red;
+  padding: 0 0.5rem;
+}
+.bulish-sliderMain {
+  width: 90vw;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+.bulish-slider {
+  /* width: 33%; */
+  padding: 1.5rem;
+  margin: 0.5rem;
+  background-color: #f8f9fa;
+}
+
+/* Footer Component CSS */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e8e8e8;
+}
+.footer-left,
+.footer-right {
+  width: 40%;
+  height: 30vh;
+  padding: 5rem 3rem;
+}
+.footer-left h1,
+.footer-right h1 {
+  color: red;
+  margin-bottom: 2rem;
+}
+.footer li {
+  padding: 0.5rem 0;
+  list-style: none;
+}
+.footer-left p {
+  padding-bottom: 2.5rem;
+}
+.footer-icons {
+  color: #17a2b8;
+  width: 2rem;
+  height: 1rem;
+  padding: 0.2rem;
+  border: 2px solid #17a2b8;
+  border-radius: 5rem;
+}
+.footerDown {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2.5rem 0;
+  background-color: #e8e8e8;
+}
+.footerDown span {
+  color: red;
+}
