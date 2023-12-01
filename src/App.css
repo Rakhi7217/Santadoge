@@ -333,6 +333,10 @@
     width: 96vw;
     padding: 0;
   }
+  .bulish {
+    width: 100vw;
+    height: 70vh;
+  }
   .roadmap li {
     list-style: none;
     display: flex;
