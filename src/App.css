@@ -78,7 +78,6 @@
   display: none;
   float: right;
   /* justify-content: flex-end; */
-
   /* width: 2rem;   */
 }
 .react-btn {
@@ -170,26 +169,6 @@
   background-color: rgb(30, 30, 30);
 }
 
-@media screen and (max-width: 720px) {
-  .mobMenu {
-    display: flex;
-    width: 35px;
-    height: 50px;
-  }
-  .navbarMenuList {
-    display: none;
-  }
-  .navbarBtn {
-    display: none;
-  }
-  .navbar {
-    background-color: transparent;
-  }
-  .navbar .logo {
-    display: none;
-  }
-}
-
 .portfolio {
   margin: 0 auto;
   /* max-width: 60rem; */
@@ -233,18 +212,7 @@
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 1140px) {
-  .portfolio {
-    margin-top: 100px;
-    margin-bottom: 150px;
-  }
-  .portfolio-progress h3 {
-    width: 50%;
-    font: 1rem;
-    display: flex;
-    justify-content: space-between;
-  }
-}
+
 .portfolio-progress h3 span {
   color: yellow;
 }
@@ -288,7 +256,7 @@
   display: flex;
   padding: 2.5rem;
   border-radius: 10px;
-  text-align: center;
+  /* text-align: center; */
   background-color: #f8f9fa;
 }
 .home-end > h3 {
@@ -302,72 +270,19 @@
   margin: 0 10%;
 }
 
-@media screen and (max-width: 720px) {
-  .btn-navbar {
-    display: block;
-  }
-  .navbar-main {
-    display: none;
-  }
-  .home-main {
-    display: flex;
-    flex-direction: column;
-  }
-  .home-end-main {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .home-img{
-    width: 100vw;
-  }
-  .home-img img{
-    width: 100%;
-  }
-  .roadmap-main {
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .roadmap {
-    width: 96vw;
-    padding: 0;
-  }
-  .bulish {
-    width: 100vw;
-    height: 70vh;
-  }
-  .roadmap li {
-    list-style: none;
-    display: flex;
-    margin: 0;
-  }
-  .roadmap li .icon {
-    color: green;
-    margin-top: 0.25rem;
-    padding-right: 0.8rem;
-  }
-  .roadmap h3 {
-    color: #17a2b8;
-  }
-  .roadmap h1 {
-    font-weight: normal;
-    font-size: 2.5rem;
-    font-family: cursive;
-    color: #00394f;
-  }
-}
 .home-icon {
-  color: red; 
-  padding: .5rem;
+  color: red;
+  padding: 0.5rem;
   font-size: 5rem;
 }
 
 /* Roadmap CSS */
 .roadmap-main {
-  padding: 5rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
 }
 .roadmap {
   width: 40%;
@@ -481,7 +396,6 @@
   height: 30vh;
   padding: 5rem 3rem;
 }
-.footer-left h1,
 .footer-right h1 {
   color: red;
   margin-bottom: 2rem;
@@ -509,4 +423,117 @@
 }
 .footerDown span {
   color: red;
+}
+
+@media screen and (max-width: 1140px) {
+  .portfolio {
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+  .portfolio-progress h3 {
+    width: 50%;
+    font: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 720px) {
+  .mobMenu {
+    display: flex;
+    width: 35px;
+    height: 50px;
+  }
+  .navbarMenuList {
+    display: none;
+  }
+  .navbarBtn {
+    display: none;
+  }
+  .navbar {
+    background-color: transparent;
+  }
+  .navbar .logo {
+    display: none;
+  }
+
+  .btn-navbar {
+    display: block;
+  }
+  .navbar-main {
+    display: none;
+  }
+  .home-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-end-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .home-img {
+    width: 100vw;
+  }
+  .home-img img {
+    width: 100%;
+  }
+  .tokenomics{
+    margin-bottom: 4rem;
+  }
+  .bulish {
+    height: max-content;
+    padding-top: 15rem;
+  }
+  .roadmap-main {
+    width: 100vw;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  .roadmap {
+    width: 96vw;
+  }
+  .roadmap li {
+    list-style: none;
+    display: flex;
+    padding-top: 0.2rem;
+  }
+  .roadmap li .icon {
+    color: green;
+    margin-top: 0.25rem;
+    padding-right: 0.8rem;
+  }
+  .roadmap h3 {
+    color: #17a2b8;
+  }
+  .roadmap h1 {
+    font-weight: normal;
+    font-size: 2.5rem;
+    font-family: cursive;
+    color: #00394f;
+  }
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    padding: 5rem 3rem;
+  }
+  .bulish h1{
+    font-size: 1.5rem;
+    padding: .3rem;
+  }
+  .home-left {
+    width: 65vw;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .home-left h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: cursive;
+    padding: 0;
+  }
+  .home-left p {
+    padding-bottom: 2;
+  }
 }
