@@ -437,7 +437,7 @@
     justify-content: space-between;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1080px) {
   .mobMenu {
     display: flex;
     width: 35px;
