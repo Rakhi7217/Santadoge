@@ -515,6 +515,7 @@
   .footer-left,
   .footer-right {
     width: 100%;
+    height: max-content;
     padding: 5rem 3rem;
   }
   .bulish h1{
