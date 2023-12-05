@@ -345,7 +345,7 @@
 
 /* Bulish Component CSS */
 .bulish {
-  width: 100vw;
+/*   width: 100vw; */
   height: 50vh;
   display: flex;
   flex-direction: column;
