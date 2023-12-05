@@ -16,7 +16,7 @@ function Home() {
             arrived with lots of presents and rewards to make your Christmas
             happy
           </p>
-          <button className="navbar-button">Buy On Uniswap</button>
+{/*           <button className="navbar-button">Buy On Uniswap</button> */}
         </div>
         <div className="home-img">
           <img src={santadoge} alt="" />
