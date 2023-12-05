@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='footer'>
       <div className='footer-left'>
         <h1> Santadoge </h1>
-        <p>Before you go, don't forget to Join the socials for the latest updates, news, and community discussions about the Santadoge memecoin on the Etherium chain. Thank you for being a part of our journey, and we hope to see you again soon! Happy browsing!</p>
+        <p>Before you go, don't forget to Join the socials for the latest updates, news, and community discussions about the Santadoge memecoin on the BSC chain. Thank you for being a part of our journey, and we hope to see you again soon! Happy browsing!</p>
         <FaTwitter className='footer-icons'/>
         <FaTelegramPlane className='footer-icons'/>
       </div>
