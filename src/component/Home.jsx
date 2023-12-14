@@ -11,8 +11,7 @@ function Home() {
             <h1 className="h1">SantaDoge</h1>
           </div>
           <p>
-            Next big thing on solana network. Get ready to dwell in the World full of HIPHOP. Music, celebrities, ideas, talent, competition, passion you name it. That’s where we all come together that’s where you want to be. Join our community today.
-          </p>
+            The story of Santa Doge is connected to the largest holiday, Christmas, and Elon, the meme token's godfather.Santa Doge is arrived with lots of presents and rewards to make your Christmas happy
 {/*           <button className="navbar-button">Buy On Uniswap</button> */}
         </div>
         <div className="home-img">
